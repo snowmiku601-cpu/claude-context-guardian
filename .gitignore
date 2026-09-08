@@ -1,0 +1,29 @@
+# ---- user-private runtime artifacts (never commit) ----
+sounds/*.mp3
+sounds/*.wav
+sounds/*.ogg
+sounds/*.flac
+sounds/*.m4a
+/state/
+/logs/
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.tmp
+build-output/
+
+# ---- local config / secrets ----
+overlay.config.json
+settings*.json
+settings*.bak*
+*.bak*
+*.log
+
+# ---- per-user overlay position state ----
+*.position.json
+
+# ---- OS noise ----
+Thumbs.db
+Desktop.ini

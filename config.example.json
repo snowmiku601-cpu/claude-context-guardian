@@ -1,0 +1,35 @@
+# Claude Context Guardian — example runtime config.
+# Install copies this to ~/.claude/guardian/config.json with paths rendered
+# for your machine. Paths below use <guardian-dir> placeholders; the installer
+# derives them from your own home directory (no hardcoded user paths).
+{
+  "thresholds": {
+    "t70": 70,
+    "t80": 80,
+    "t90": 90
+  },
+  "sounds": {
+    "t70": "<guardian-dir>/sounds/dung.mp3",
+    "t80": "<guardian-dir>/sounds/getout.mp3",
+    "t90": "<guardian-dir>/sounds/fa.mp3"
+  },
+  "notifier": "<guardian-dir>/notify.ps1",
+  "stateDir": "<guardian-dir>/state",
+  "logsDir": "<guardian-dir>/logs",
+  "resetDrop": {
+    "enabled": true,
+    "fromPct": 50,
+    "toPct": 35
+  },
+  "debugLog": false,
+  "expectedContextWindowSize": null,
+  "transcriptTailMaxBytes": 524288,
+  "transcriptChunkBytes": 65536,
+  "lockTimeoutMs": 250,
+  "toasts": {
+    "t70": "Claude Context 70%",
+    "t80": "Claude Context 80%",
+    "t90": "Claude Context 90%",
+    "precompact": "Claude Context: Auto Compact"
+  }
+}

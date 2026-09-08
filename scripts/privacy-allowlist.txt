@@ -1,0 +1,7 @@
+# Privacy scanner allowlist — documented synthetic/placeholder patterns.
+# Lines are glob-style or regex patterns matched against repo-relative paths.
+# Fixtures under tests/fixtures/ are STILL scanned; only the synthetic value
+# forms documented in the plan (EXAMPLE-* / all-zero UUIDs) pass the rules.
+tests/fixtures/state/*
+README.md
+docs/*

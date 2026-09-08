@@ -1,0 +1,10 @@
+{
+  "diameterPx": 150,
+  "opacity": 0.95,
+  "waveEnabled": true,
+  "staticFill": false,
+  "oneWave": false,
+  "fps": 20,
+  "staleAfterMinutes": 15,
+  "multiSessionIndicator": true
+}
